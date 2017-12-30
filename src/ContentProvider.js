@@ -21,32 +21,38 @@ export default class ContentProvider {
 			.catch((error) => {
 				console.log("failed to download: ",id);
 				reject();
-			})
+			});
 		});
 	}
 
 	createQueue(ids, start, end) {
-		return ids.slice(start, end).map((id) => this.fetchItem(id));
+		return ids.map((id) => this.fetchItem(id));
 	}
 
 	load() {
-		const url = this.state.baseURL+this.state.contentPath
-		fetchURL(url)
-    .then((ids) => {
-      const queue = this.createQueue(ids, 0, 20);
-
-			Promise
-      .all(queue)
-      .then(() => {
-				console.log('Downloaded all.')
+		const url = this.state.baseURL+this.state.contentPath;
+		return new Promise((resolve, reject) => {
+			fetchURL(url)
+			.then((ids) => {
+				this.state.itemIDs = ids;
+	
+				const max = 20;
+				const list = ids.slice(0, max);
+				const queue = this.createQueue(list);
+	
+				Promise
+				.all(queue)
+				.then(() => {
+					const data = ids.slice(0,max).map((id) => this.state.items[id]);
+					resolve(data);
+				})
+				.catch((error) => {
+					reject(error);
+				});
 			})
-      .catch((error) => {
-        console.log(error);
-        // reject(Error('Failed to upload slots'));
-      });
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+			.catch((error) => {
+				reject(error);
+			})
+		});
 	}
 }

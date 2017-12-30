@@ -35,6 +35,6 @@ export default class HN {
 	}
 
 	fetch() {
-		this.contentProvider.load();
+		return this.contentProvider.load();
 	}
 }
