@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import HN from '../HN';
 import { ContentEnum } from '../ContentEnum';
+import Story from './Story'
 
 class App extends Component {
 
@@ -35,13 +36,16 @@ class App extends Component {
   }
 
   render() {
+    const stories = [];
+    for(let i = 0; i<this.state.top.length; i++) {
+      const story = this.state.top[i];
+      stories.push(<Story key={story.id} data={story} index={i+1}/>);
+    }
+
     return (
       <div className="">
       {
-        this.state.top.map((story) => {
-          const kids = story.kids || [];
-          return <p>{story.title} - {story.url} - {kids.length}</p>
-        })
+        stories
       }
       </div>
     );
