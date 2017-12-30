@@ -1,7 +1,7 @@
 {
   "name": "hn-pwa",
   "version": "0.1.0",
-  "homepage": "https://ehtd.github.io/hn-pwa/",
+  "homepage": "https://ehtd.github.io/hn-pwa-web/",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
