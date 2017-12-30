@@ -3,7 +3,6 @@ import fetchURL from './fetcher';
 export default class ContentProvider {
 	constructor(baseURL, contentPath) {
 		this.state = {
-			fetching: false,
 			itemIDs: [],
 			items: {},
 			baseURL: baseURL,
