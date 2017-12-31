@@ -1,0 +1,9 @@
+.container-vertical {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  align-items: center;
+  justify-content: center;
+  background: red;
+}

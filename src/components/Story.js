@@ -1,27 +1,18 @@
 import React from 'react';
+import '../css/Story.css';
 
 class Story extends React.Component {
-
-	constructor() {
-		super();
-
-		this.handleClick = this.handleClick.bind(this);
-	}
-
-	handleClick(e) {
-
-	}
 
 	render() {
 		const data = this.props.data;
 
 		const kids = data.kids || [];
 		return (
-			<ul className="">
-				<li>{this.props.index}</li>
-				<li><a href={data.url} onClick={this.handleClick}>{data.title}</a></li>
-				<li>{kids.length}</li>
-			</ul>
+			<div className="container-horizontal">
+				<div className="circle-container">{this.props.index}</div>
+				<div className="title-label"><a href={data.url}>{data.title}</a></div>
+				<div className="circle-container">{kids.length}</div>
+			</div>
 		);
 	}
 }

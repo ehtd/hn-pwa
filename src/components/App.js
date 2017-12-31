@@ -43,7 +43,7 @@ class App extends Component {
     }
 
     return (
-      <div className="">
+      <div className="container-vertical">
       {
         stories
       }
