@@ -35,7 +35,7 @@ export default class ContentProvider {
 			.then((ids) => {
 				this.state.itemIDs = ids;
 	
-				const max = 20;
+				const max = 50;
 				const list = ids.slice(0, max);
 				const queue = this.createQueue(list);
 	

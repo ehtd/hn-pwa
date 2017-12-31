@@ -6,27 +6,211 @@
 
   margin: 0 0 5px 0;
   padding: 30px 5px 30px 5px;
-	background: #DDD;
+	background: white;
 	border-radius: 20px;
   width: 100%;
 }
 
 .title-label {
-  flex: 0 2 auto;
+  flex: 0 6 auto;
   padding: 5px 5px 5px 5px;
+  font: bold 14px Georgia, serif;
 }
 
-.circle-container {
+.circle-0 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  flex: 0 0 auto;
 
   padding: 5px 5px 5px 5px;
   height: 50px;
   width: 50px;
-  background: red;
+  border-radius: 30px;
+  
+  /* blueColor */
+  background: #2980B9; 
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
   border-radius: 30px;
 
+  /* turquoiseColor */
+  background: #1ABC9C;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* emeraldColor */
+  background: #2ECC71;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* amethystColor */
+  background: #9B59B6;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* sunFlowerColor */
+  background: #F1C40F;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* carrotColor */
+  background: #E67E22;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* alizarinColor */
+  background: #E74C3C;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-7 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* wisteriaColor */
+  background: #8E44AE;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-8 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* orangeColor */
+  background: #F39C12;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-9 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* pumpkinColor */
+  background: #D35400;
+  color: white;
+  font: bold 18px Georgia, serif;
+}
+
+.circle-10 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 auto;
+
+  padding: 5px 5px 5px 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  
+  /* belizeHoleColor */
+  background: #2980B9;
+  color: white;
+  font: bold 18px Georgia, serif;
 }
